@@ -27,10 +27,13 @@ typemap = "0.3"
 wasmparser = "0.80"
 
 [dev-dependencies]
-lazy_static = "1.2"
 wat = "1.0.37"
 quickcheck = "1.0.0"
 anyhow = "1.0"
+
+[dev-dependencies.lazy_static]
+features = ["spin_no_std"]
+version = "1.2.0"
 
 [badges]
 maintenance = { status = "experimental" }
